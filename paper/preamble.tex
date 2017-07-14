@@ -1,0 +1,23 @@
+\def\TheAcknowledgments{I would like to thank Jan Burse for discussions on the SWI Prolog
+mailing list about using Prolog for differentiation and for prompting me to
+investigate the problem of computing multiple derivatives (for the purpose of finding
+Taylor series coefficients), which led to the second, improved implementation presented here).}
+
+\def\TheAuthors{Samer Abdallah (\texttt{samer@jukedeck.com})}
+\def\TheInstitution{Jukedeck Ltd.}
+
+\def\TheTitle{Automatic Differentiation using Constraint Handling Rules in Prolog}
+
+\def\TheAbstract{Automatic differentiation is a technique which allows a programmer
+to define a numerical computation via compositions of a broad range of
+numeric and computational primitives and have the underlying system support
+the computation of partial derivatives of the result with respect
+to any of its inputs, without making any finite difference approximations, and without
+manipulating large symbolic expressions representing the computation. This note describes 
+a novel approach to reverse mode automatic differentiation using constraint logic programmming,
+specifically, the constraint handling rules (CHR) library of SWI Prolog,
+resulting in a very small (50 lines of code) implementation. 
+When applied to a differentiation-based implementation of the inside-outside
+algorithm for parameter learning in probabilistic grammars, the CHR based implementations
+outperformed two well-known frameworks for optimising differentiable functions, Theano and TensorFlow, 
+by a large margin.}

@@ -1,0 +1,83 @@
+\usepackage{listings}
+\definecolor{ListingBar}{rgb}{0.8,0.8,0.8}
+\definecolor{ListingBG}{rgb}{0.95,0.95,0.95}
+\definecolor{Comment}{rgb}{0.4,0.4,0.4}
+
+% FROM PLP talk
+\lstset{%
+  language=prolog,
+  columns=fullflexible,
+  % basicstyle=\usefont{T1}{cmr}{m}{n},
+  % basicstyle=\ttfamily
+  identifierstyle=\itshape, emphstyle=\itshape,
+  % identifierstyle=\itshape, emphstyle=\upshape,
+  % identifierstyle=\upshape, emphstyle=\itshape,
+	commentstyle=\color{Comment}\bfseries,
+  emph={X,Y,Z,M,N,N1,N2,I1,I2,P,P1,P2,L},
+  morekeywords={table,false,no,yes,ground},
+  deletekeywords={statistics,repeat,pp,is,sh},
+  literate={==>}{{$\Rightarrow$ }}2
+           {<=>}{{$\Leftrightarrow$ }}2
+           {->}{{$\rightarrow$ }}2
+           {-->}{{$\longrightarrow$ }}3
+					 {~}{{$\sim$ }}1
+           {|}{{$| $}}1
+           % {:-}{{$:\!\!-$ }}2
+  }
+
+
+\lstnewenvironment{prolog-barred} {\lstset{%
+  basicstyle=\ttfamily\small,
+  identifierstyle=\upshape, 
+	emphstyle=\mdseries,
+	% backgroundcolor=\color{ListingBG},
+	commentstyle=\mdseries,
+	frame=leftline,
+	framerule=0.4em,
+	rulecolor=\color{ListingBar},
+	framesep=1em,
+	framexleftmargin=0em,
+  mathescape=true,
+  language=prolog,
+  columns=spaceflexible,
+  % aboveskip=0.75em,
+  % belowskip=0.75em,
+  xleftmargin=1.2em,
+  xrightmargin=1.2em,
+  tabsize=2,
+  gobble=2
+  }} {}
+
+\lstnewenvironment{prolog} {\lstset{%
+  mathescape=true,
+  language=prolog,
+  columns=spaceflexible,
+  morekeywords={false,ground},
+  deletekeywords={statistics,repeat,pp,is,sh,EM,time},
+  aboveskip=0.75em,
+  belowskip=0.75em,
+  xleftmargin=1.5em,
+  tabsize=2,
+  gobble=2
+  }} {}
+
+\lstnewenvironment{prolog-framed}[1][name=ad1]{\lstset{%
+  mathescape=true,
+  language=prolog,
+  columns=spaceflexible,
+  morekeywords={false,ground},
+  deletekeywords={statistics,length,repeat,pp,is,sh,EM,time},
+  frame=lines,
+  aboveskip=0.75em,
+  belowskip=0.75em,
+  xleftmargin=0em,
+  xrightmargin=0em,
+  tabsize=2,
+  gobble=2,
+	numbers=left,
+	firstnumber=auto,
+  numberstyle=\small\color{Comment},
+	#1
+  }} {}
+
+\lstMakeShortInline[language=Prolog,deletekeywords={repeat}]"

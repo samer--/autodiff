@@ -1,0 +1,16 @@
+
+\newenvironment{fig}[2][tbp]
+	{%
+		\newcommand{\bbfig}[1]{\begin{figure}[##1]}
+		\expandafter\bbfig\expandafter{#1}
+		\def\fglbl{#2}
+		\let\ocap=\caption
+		\renewcommand{\caption}[2][]{\ocap[##1]{\small ##2}}
+		\centering\small
+	}{%
+		\figlab{\fglbl}
+		\end{figure}
+	}
+
+\newcommand{\colfig}[2][1]{\includegraphics[width=#1\linewidth]{#2}}
+\newcommand{\scalefig}[2][1]{\includegraphics[scale=#1]{#2}}

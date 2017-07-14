@@ -1,0 +1,65 @@
+Functional automatic differentiation
+
+Pearlmutter and Siskind explore functional approach using program transformation.
+
+Program transformations can often be implemented as a library using delimited
+continuations.
+
+This approach hits trouble because a direct approach seems to require answer type polymorphism.
+We try to implement an answer type consisting of the numerical answer of the forward 
+computation paired with a back-propagation function which takes the sensitivity of
+some final result with respect to the answer and returns the sensitivity of the the 
+final result with respect to the inputs. The type of the continuation is
+	a -> b * (b -> a)
+seems reasonable, but this hits problems.
+
+As others have shown [refs], this delimited continuation based approach is closely
+related to monads, and, when used, the type of the continuation a -> m b, where m is
+the monad, is essentially the type of the Keisli arrow.
+
+Starting again with an arrow based implementation seems more promising. The arrow type is
+	AD a b == a -> b * (b -> a))
+The arrow combinators capture the 'wiring diagram' aspect of constructing differentiable
+computation graphs.
+
+To get higher order derivatives, we need
+	ADH a b = a -> b * ADH b a
+
+However, it's not an Arrow in the sense of the Haskell Arrow class, because there is
+no sensible function arr :: (a -> b) -> AD a b -- we cannot just invent a differentiable 
+counterpart of an arbitrary function. What we have is an arrow in the more general
+categorical sense. This seems to work pretty well!
+
+arr required for Paterson's process notation for arrows. Problem noted by Alimarine et al.
+
+Closed cartesian categories - arrows with apply - Conal Elliot looking into 
+compilation of lamda calculus code into CCC arrow combinators. But this relies
+on the presence of arr to handle the 'plumbing'.
+
+Other work on arrows to express reversible computation.
+
+The loss of arr means we need to make sure we have a complete set of differentiable
+wiring manipulation operators.
+
+Look to Sabry and Roshans work on reversible computations, negative and fractional
+types etc, where computation is also expressed as an arrow. (Also, they suggest that 
+it may not be possible to express reversible computation as a monad.)
+They use type isomorphisms to derive wiring operators. Also extend to recursive
+types (fold and unfold) and recursive computations (trace). But not recurrent
+stream processors (loop).
+
+Interesting cases of irreversible plumbings: fst, snd, const. What about dup?
+Information effects.
+
+They also look at translation form a lambda calculus to their arrow language.
+
+cf Keilsi arrows: if monad is m, the arrow K a b = a -> m b.
+If autodiff arrow is a -> b * (b -> a), this might suggest that m b = b * (b->a),
+but this doesn't work because of the a - is it existentially quantified? Should it
+be exposed? Can it be a universal type? It doesn't look good.
+
+
+[0] A. Alimarine, S. Smetsers, A. van Weelden, M. van Eekelen, and R. Plasmeijer. There and back again: arrows for invertible programming. In Proceedings of the 2005 ACM SIGPLAN workshop on Haskell, pages 86–97. ACM, 2005.
+[1] B. A. Pearlmutter and J. M. Siskind. Reverse-mode ad in a functional framework: Lambda the ultimate backpropagator. ACM Transactions on Programming Languages and Systems (TOPLAS), 30(2):7, 2008.
+[2] R. P. James and A. Sabry. The two dualities of computation: Negative and fractional types. Technical report, Citeseer, 2012.
+[3] R. P. James and A. Sabry. Information effects. In ACM SIGPLAN Notices, volume 47, pages 73–84. ACM, 2012.

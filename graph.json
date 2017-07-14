@@ -1,0 +1,329 @@
+{
+  "nom([box,worked],[worked])": [ ["nom:=1", "n:=box" ] ],
+  "nom([lovely,telescope,some,park,without,bob,under,some,moose],[some,park,without,bob,under,some,moose])": [
+    [
+      "nom:=2",
+      "adj:=lovely",
+      "nom([telescope,some,park,without,bob,under,some,moose],[some,park,without,bob,under,some,moose])"
+    ]
+  ],
+  "nom([man,baked,bob,with,alice],[baked,bob,with,alice])": [ ["nom:=1", "n:=man" ] ],
+  "nom([man,worked],[worked])": [ ["nom:=1", "n:=man" ] ],
+  "nom([moose],[])": [ ["nom:=1", "n:=moose" ] ],
+  "nom([park,without,bob,under,some,moose],[without,bob,under,some,moose])": [ ["nom:=1", "n:=park" ] ],
+  "nom([telescope],[])": [ ["nom:=1", "n:=telescope" ] ],
+  "nom([telescope,lived,under,my,telescope],[lived,under,my,telescope])": [ ["nom:=1", "n:=telescope" ] ],
+  "nom([telescope,some,park,without,bob,under,some,moose],[some,park,without,bob,under,some,moose])": [ ["nom:=1", "n:=telescope" ] ],
+  "np([a,box,worked],[worked])": [ ["np:=1", "d:=a", "nom([box,worked],[worked])" ] ],
+  "np([a,telescope,lived,under,my,telescope],[lived,under,my,telescope])": [
+    [
+      "np:=1",
+      "d:=a",
+      "nom([telescope,lived,under,my,telescope],[lived,under,my,telescope])"
+    ]
+  ],
+  "np([alice],[])": [ ["np:=2", "pn:=alice" ] ],
+  "np([alice,believed,a,telescope,lived,under,my,telescope],[believed,a,telescope,lived,under,my,telescope])": [ ["np:=2", "pn:=alice" ] ],
+  "np([alice,worked],[worked])": [ ["np:=2", "pn:=alice" ] ],
+  "np([bob,under,some,moose],[])": [
+    [
+      "np:=3",
+      "np([bob,under,some,moose],[under,some,moose])",
+      "pp([under,some,moose],[])"
+    ]
+  ],
+  "np([bob,under,some,moose],[under,some,moose])": [ ["np:=2", "pn:=bob" ] ],
+  "np([bob,with,alice],[])": [
+    [
+      "np:=3",
+      "np([bob,with,alice],[with,alice])",
+      "pp([with,alice],[])"
+    ]
+  ],
+  "np([bob,with,alice],[with,alice])": [ ["np:=2", "pn:=bob" ] ],
+  "np([cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[baked,the,lovely,telescope,some,park,without,bob,under,some,moose])": [ ["np:=2", "pn:=cuthbert" ] ],
+  "np([cuthbert,said,alice,believed,a,telescope,lived,under,my,telescope],[said,alice,believed,a,telescope,lived,under,my,telescope])": [ ["np:=2", "pn:=cuthbert" ] ],
+  "np([cuthbert,worked],[worked])": [ ["np:=2", "pn:=cuthbert" ] ],
+  "np([delia],[])": [ ["np:=2", "pn:=delia" ] ],
+  "np([delia,believed,delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[believed,delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose])": [ ["np:=2", "pn:=delia" ] ],
+  "np([delia,caught,alice],[caught,alice])": [ ["np:=2", "pn:=delia" ] ],
+  "np([delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[baked,the,lovely,telescope,some,park,without,bob,under,some,moose])": [
+    [
+      "np:=3",
+      "np([delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose])",
+      "pp([in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[baked,the,lovely,telescope,some,park,without,bob,under,some,moose])"
+    ]
+  ],
+  "np([delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose])": [ ["np:=2", "pn:=delia" ] ],
+  "np([edna,ran,alice],[ran,alice])": [ ["np:=2", "pn:=edna" ] ],
+  "np([edna,ran,delia],[ran,delia])": [ ["np:=2", "pn:=edna" ] ],
+  "np([my,telescope],[])": [ ["np:=1", "d:=my", "nom([telescope],[])" ] ],
+  "np([some,man,baked,bob,with,alice],[baked,bob,with,alice])": [
+    [
+      "np:=1",
+      "d:=some",
+      "nom([man,baked,bob,with,alice],[baked,bob,with,alice])"
+    ]
+  ],
+  "np([some,moose],[])": [ ["np:=1", "d:=some", "nom([moose],[])" ] ],
+  "np([some,park,without,bob,under,some,moose],[])": [
+    [
+      "np:=3",
+      "np([some,park,without,bob,under,some,moose],[without,bob,under,some,moose])",
+      "pp([without,bob,under,some,moose],[])"
+    ],
+    [
+      "np:=3",
+      "np([some,park,without,bob,under,some,moose],[under,some,moose])",
+      "pp([under,some,moose],[])"
+    ]
+  ],
+  "np([some,park,without,bob,under,some,moose],[under,some,moose])": [
+    [
+      "np:=3",
+      "np([some,park,without,bob,under,some,moose],[without,bob,under,some,moose])",
+      "pp([without,bob,under,some,moose],[under,some,moose])"
+    ]
+  ],
+  "np([some,park,without,bob,under,some,moose],[without,bob,under,some,moose])": [
+    [
+      "np:=1",
+      "d:=some",
+      "nom([park,without,bob,under,some,moose],[without,bob,under,some,moose])"
+    ]
+  ],
+  "np([the,lovely,telescope,some,park,without,bob,under,some,moose],[some,park,without,bob,under,some,moose])": [
+    [
+      "np:=1",
+      "d:=the",
+      "nom([lovely,telescope,some,park,without,bob,under,some,moose],[some,park,without,bob,under,some,moose])"
+    ]
+  ],
+  "np([the,man,worked],[worked])": [ ["np:=1", "d:=the", "nom([man,worked],[worked])" ] ],
+  "pp([in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[baked,the,lovely,telescope,some,park,without,bob,under,some,moose])": [
+    [
+      "p:=in",
+      "np([cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[baked,the,lovely,telescope,some,park,without,bob,under,some,moose])"
+    ]
+  ],
+  "pp([under,my,telescope],[])": [ ["p:=under", "np([my,telescope],[])" ] ],
+  "pp([under,some,moose],[])": [ ["p:=under", "np([some,moose],[])" ] ],
+  "pp([with,alice],[])": [ ["p:=with", "np([alice],[])" ] ],
+  "pp([without,bob,under,some,moose],[])": [ ["p:=without", "np([bob,under,some,moose],[])" ] ],
+  "pp([without,bob,under,some,moose],[under,some,moose])": [ ["p:=without", "np([bob,under,some,moose],[under,some,moose])" ] ],
+  "s([a,box,worked],[])": [ ["np([a,box,worked],[worked])", "vp([worked],[])" ] ],
+  "s([a,telescope,lived,under,my,telescope],[])": [
+    [
+      "np([a,telescope,lived,under,my,telescope],[lived,under,my,telescope])",
+      "vp([lived,under,my,telescope],[])"
+    ]
+  ],
+  "s([a,telescope,lived,under,my,telescope],[under,my,telescope])": [
+    [
+      "np([a,telescope,lived,under,my,telescope],[lived,under,my,telescope])",
+      "vp([lived,under,my,telescope],[under,my,telescope])"
+    ]
+  ],
+  "s([alice,believed,a,telescope,lived,under,my,telescope],[])": [
+    [
+      "np([alice,believed,a,telescope,lived,under,my,telescope],[believed,a,telescope,lived,under,my,telescope])",
+      "vp([believed,a,telescope,lived,under,my,telescope],[])"
+    ]
+  ],
+  "s([alice,believed,a,telescope,lived,under,my,telescope],[under,my,telescope])": [
+    [
+      "np([alice,believed,a,telescope,lived,under,my,telescope],[believed,a,telescope,lived,under,my,telescope])",
+      "vp([believed,a,telescope,lived,under,my,telescope],[under,my,telescope])"
+    ]
+  ],
+  "s([alice,worked],[])": [ ["np([alice,worked],[worked])", "vp([worked],[])" ] ],
+  "s([cuthbert,said,alice,believed,a,telescope,lived,under,my,telescope],[])": [
+    [
+      "np([cuthbert,said,alice,believed,a,telescope,lived,under,my,telescope],[said,alice,believed,a,telescope,lived,under,my,telescope])",
+      "vp([said,alice,believed,a,telescope,lived,under,my,telescope],[])"
+    ]
+  ],
+  "s([cuthbert,worked],[])": [ ["np([cuthbert,worked],[worked])", "vp([worked],[])" ] ],
+  "s([delia,believed,delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[])": [
+    [
+      "np([delia,believed,delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[believed,delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose])",
+      "vp([believed,delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[])"
+    ]
+  ],
+  "s([delia,caught,alice],[])": [ ["np([delia,caught,alice],[caught,alice])", "vp([caught,alice],[])" ] ],
+  "s([delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[])": [
+    [
+      "np([delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[baked,the,lovely,telescope,some,park,without,bob,under,some,moose])",
+      "vp([baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[])"
+    ]
+  ],
+  "s([delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[under,some,moose])": [
+    [
+      "np([delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[baked,the,lovely,telescope,some,park,without,bob,under,some,moose])",
+      "vp([baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[under,some,moose])"
+    ]
+  ],
+  "s([delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[without,bob,under,some,moose])": [
+    [
+      "np([delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[baked,the,lovely,telescope,some,park,without,bob,under,some,moose])",
+      "vp([baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[without,bob,under,some,moose])"
+    ]
+  ],
+  "s([edna,ran,alice],[])": [ ["np([edna,ran,alice],[ran,alice])", "vp([ran,alice],[])" ] ],
+  "s([edna,ran,delia],[])": [ ["np([edna,ran,delia],[ran,delia])", "vp([ran,delia],[])" ] ],
+  "s([some,man,baked,bob,with,alice],[])": [
+    [
+      "np([some,man,baked,bob,with,alice],[baked,bob,with,alice])",
+      "vp([baked,bob,with,alice],[])"
+    ]
+  ],
+  "s([the,man,worked],[])": [ ["np([the,man,worked],[worked])", "vp([worked],[])" ] ],
+  "vp([baked,bob,with,alice],[])": [
+    [
+      "vp:=4",
+      "vp([baked,bob,with,alice],[with,alice])",
+      "pp([with,alice],[])"
+    ],
+    ["vp:=2", "tv:=baked", "np([bob,with,alice],[])" ]
+  ],
+  "vp([baked,bob,with,alice],[with,alice])": [ ["vp:=2", "tv:=baked", "np([bob,with,alice],[with,alice])" ] ],
+  "vp([baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[])": [
+    [
+      "vp:=4",
+      "vp([baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[without,bob,under,some,moose])",
+      "pp([without,bob,under,some,moose],[])"
+    ],
+    [
+      "vp:=4",
+      "vp([baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[under,some,moose])",
+      "pp([under,some,moose],[])"
+    ],
+    [
+      "vp:=3",
+      "dv:=baked",
+      "np([the,lovely,telescope,some,park,without,bob,under,some,moose],[some,park,without,bob,under,some,moose])",
+      "np([some,park,without,bob,under,some,moose],[])"
+    ]
+  ],
+  "vp([baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[under,some,moose])": [
+    [
+      "vp:=4",
+      "vp([baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[without,bob,under,some,moose])",
+      "pp([without,bob,under,some,moose],[under,some,moose])"
+    ],
+    [
+      "vp:=3",
+      "dv:=baked",
+      "np([the,lovely,telescope,some,park,without,bob,under,some,moose],[some,park,without,bob,under,some,moose])",
+      "np([some,park,without,bob,under,some,moose],[under,some,moose])"
+    ]
+  ],
+  "vp([baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[without,bob,under,some,moose])": [
+    [
+      "vp:=3",
+      "dv:=baked",
+      "np([the,lovely,telescope,some,park,without,bob,under,some,moose],[some,park,without,bob,under,some,moose])",
+      "np([some,park,without,bob,under,some,moose],[without,bob,under,some,moose])"
+    ]
+  ],
+  "vp([believed,a,telescope,lived,under,my,telescope],[])": [
+    [
+      "vp:=5",
+      "mv:=believed",
+      "s([a,telescope,lived,under,my,telescope],[])"
+    ],
+    [
+      "vp:=4",
+      "vp([believed,a,telescope,lived,under,my,telescope],[under,my,telescope])",
+      "pp([under,my,telescope],[])"
+    ]
+  ],
+  "vp([believed,a,telescope,lived,under,my,telescope],[under,my,telescope])": [
+    [
+      "vp:=5",
+      "mv:=believed",
+      "s([a,telescope,lived,under,my,telescope],[under,my,telescope])"
+    ]
+  ],
+  "vp([believed,delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[])": [
+    [
+      "vp:=5",
+      "mv:=believed",
+      "s([delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[])"
+    ],
+    [
+      "vp:=4",
+      "vp([believed,delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[under,some,moose])",
+      "pp([under,some,moose],[])"
+    ],
+    [
+      "vp:=4",
+      "vp([believed,delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[without,bob,under,some,moose])",
+      "pp([without,bob,under,some,moose],[])"
+    ]
+  ],
+  "vp([believed,delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[under,some,moose])": [
+    [
+      "vp:=5",
+      "mv:=believed",
+      "s([delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[under,some,moose])"
+    ],
+    [
+      "vp:=4",
+      "vp([believed,delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[without,bob,under,some,moose])",
+      "pp([without,bob,under,some,moose],[under,some,moose])"
+    ]
+  ],
+  "vp([believed,delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[without,bob,under,some,moose])": [
+    [
+      "vp:=5",
+      "mv:=believed",
+      "s([delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[without,bob,under,some,moose])"
+    ]
+  ],
+  "vp([caught,alice],[])": [ ["vp:=2", "tv:=caught", "np([alice],[])" ] ],
+  "vp([lived,under,my,telescope],[])": [
+    [
+      "vp:=4",
+      "vp([lived,under,my,telescope],[under,my,telescope])",
+      "pp([under,my,telescope],[])"
+    ]
+  ],
+  "vp([lived,under,my,telescope],[under,my,telescope])": [ ["vp:=1", "iv:=lived" ] ],
+  "vp([ran,alice],[])": [ ["vp:=2", "tv:=ran", "np([alice],[])" ] ],
+  "vp([ran,delia],[])": [ ["vp:=2", "tv:=ran", "np([delia],[])" ] ],
+  "vp([said,alice,believed,a,telescope,lived,under,my,telescope],[])": [
+    [
+      "vp:=5",
+      "mv:=said",
+      "s([alice,believed,a,telescope,lived,under,my,telescope],[])"
+    ],
+    [
+      "vp:=4",
+      "vp([said,alice,believed,a,telescope,lived,under,my,telescope],[under,my,telescope])",
+      "pp([under,my,telescope],[])"
+    ]
+  ],
+  "vp([said,alice,believed,a,telescope,lived,under,my,telescope],[under,my,telescope])": [
+    [
+      "vp:=5",
+      "mv:=said",
+      "s([alice,believed,a,telescope,lived,under,my,telescope],[under,my,telescope])"
+    ]
+  ],
+  "vp([worked],[])": [ ["vp:=1", "iv:=worked" ] ],
+  "'$top$'": [
+    [
+      "s([a,box,worked],[])",
+      "s([delia,caught,alice],[])",
+      "s([cuthbert,said,alice,believed,a,telescope,lived,under,my,telescope],[])",
+      "s([delia,believed,delia,in,cuthbert,baked,the,lovely,telescope,some,park,without,bob,under,some,moose],[])",
+      "s([some,man,baked,bob,with,alice],[])",
+      "s([alice,worked],[])",
+      "s([edna,ran,delia],[])",
+      "s([the,man,worked],[])",
+      "s([edna,ran,alice],[])",
+      "s([cuthbert,worked],[])"
+    ]
+  ]
+}

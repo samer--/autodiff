@@ -1,0 +1,8 @@
+*.pyc
+*.cmi
+*.cmo
+*.cmx
+*.o
+.ropeproject
+.*history*
+.*.sw?

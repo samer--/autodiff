@@ -1,0 +1,1905 @@
+{
+  "switches": {
+    "adj": ["hot", "cold", "thin", "fat", "disgusting", "lovely" ],
+    "d": ["the", "a", "some", "my" ],
+    "dv": ["gave", "made", "baked" ],
+    "iv": ["lived", "worked" ],
+    "mv": ["knew", "thought", "believed", "said" ],
+    "n": [
+      "dog",
+      "telescope",
+      "man",
+      "cat",
+      "mat",
+      "cake",
+      "box",
+      "floor",
+      "face",
+      "pie",
+      "moose",
+      "pyjamas",
+      "park"
+    ],
+    "nom": [1, 2 ],
+    "np": [1, 2, 3 ],
+    "p": ["with", "on", "under", "in", "without", "by" ],
+    "pn": ["alice", "bob", "cuthbert", "delia", "edna" ],
+    "tv": [
+      "saw",
+      "ate",
+      "hated",
+      "baked",
+      "liked",
+      "walked",
+      "ran",
+      "loved",
+      "caught"
+    ],
+    "vp": [1, 2, 3, 4, 5 ]
+  },
+  "graph": {
+    "nom([box],[])": [ [ ["nom", 1 ],  ["n", "box" ] ] ],
+    "nom([cake,by,my,pie],[by,my,pie])": [ [ ["nom", 1 ],  ["n", "cake" ] ] ],
+    "nom([cake,hated,alice],[hated,alice])": [ [ ["nom", 1 ],  ["n", "cake" ] ] ],
+    "nom([cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [ [ ["nom", 1 ],  ["n", "cat" ] ] ],
+    "nom([cat,knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert])": [ [ ["nom", 1 ],  ["n", "cat" ] ] ],
+    "nom([disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["nom", 2 ],
+	["adj", "disgusting" ],
+	"nom([cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "nom([dog,thought,edna,ran,edna],[thought,edna,ran,edna])": [ [ ["nom", 1 ],  ["n", "dog" ] ] ],
+    "nom([face],[])": [ [ ["nom", 1 ],  ["n", "face" ] ] ],
+    "nom([face,without,bob],[without,bob])": [ [ ["nom", 1 ],  ["n", "face" ] ] ],
+    "nom([floor,lived],[lived])": [ [ ["nom", 1 ],  ["n", "floor" ] ] ],
+    "nom([hot,dog,thought,edna,ran,edna],[thought,edna,ran,edna])": [
+      [
+	["nom", 2 ],
+	["adj", "hot" ],
+	"nom([dog,thought,edna,ran,edna],[thought,edna,ran,edna])"
+      ]
+    ],
+    "nom([hot,pyjamas,gave,bob,some,face],[gave,bob,some,face])": [
+      [
+	["nom", 2 ],
+	["adj", "hot" ],
+	"nom([pyjamas,gave,bob,some,face],[gave,bob,some,face])"
+      ]
+    ],
+    "nom([man],[])": [ [ ["nom", 1 ],  ["n", "man" ] ] ],
+    "nom([man,believed,edna,caught,a,cake,by,my,pie],[believed,edna,caught,a,cake,by,my,pie])": [ [ ["nom", 1 ],  ["n", "man" ] ] ],
+    "nom([mat,a,park,by,the,man],[a,park,by,the,man])": [ [ ["nom", 1 ],  ["n", "mat" ] ] ],
+    "nom([mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])": [ [ ["nom", 1 ],  ["n", "mat" ] ] ],
+    "nom([moose,edna],[edna])": [ [ ["nom", 1 ],  ["n", "moose" ] ] ],
+    "nom([moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [ [ ["nom", 1 ],  ["n", "moose" ] ] ],
+    "nom([moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[worked,on,the,mat,with,a,telescope,in,cuthbert])": [ [ ["nom", 1 ],  ["n", "moose" ] ] ],
+    "nom([park],[])": [ [ ["nom", 1 ],  ["n", "park" ] ] ],
+    "nom([park,by,the,man],[by,the,man])": [ [ ["nom", 1 ],  ["n", "park" ] ] ],
+    "nom([park,lived],[lived])": [ [ ["nom", 1 ],  ["n", "park" ] ] ],
+    "nom([park,under,alice],[under,alice])": [ [ ["nom", 1 ],  ["n", "park" ] ] ],
+    "nom([pie],[])": [ [ ["nom", 1 ],  ["n", "pie" ] ] ],
+    "nom([pyjamas,gave,bob,some,face],[gave,bob,some,face])": [ [ ["nom", 1 ],  ["n", "pyjamas" ] ] ],
+    "nom([pyjamas,gave,cuthbert,alice],[gave,cuthbert,alice])": [ [ ["nom", 1 ],  ["n", "pyjamas" ] ] ],
+    "nom([telescope,in,cuthbert],[in,cuthbert])": [ [ ["nom", 1 ],  ["n", "telescope" ] ] ],
+    "nom([telescope,lived],[lived])": [ [ ["nom", 1 ],  ["n", "telescope" ] ] ],
+    "nom([thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["nom", 2 ],
+	["adj", "thin" ],
+	"nom([moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "np([a,cake,by,my,pie],[])": [
+      [
+	["np", 3 ],
+	"np([a,cake,by,my,pie],[by,my,pie])",
+	"pp([by,my,pie],[])"
+      ]
+    ],
+    "np([a,cake,by,my,pie],[by,my,pie])": [ [ ["np", 1 ],  ["d", "a" ], "nom([cake,by,my,pie],[by,my,pie])" ] ],
+    "np([a,hot,dog,thought,edna,ran,edna],[thought,edna,ran,edna])": [
+      [
+	["np", 1 ],
+	["d", "a" ],
+	"nom([hot,dog,thought,edna,ran,edna],[thought,edna,ran,edna])"
+      ]
+    ],
+    "np([a,hot,pyjamas,gave,bob,some,face],[gave,bob,some,face])": [
+      [
+	["np", 1 ],
+	["d", "a" ],
+	"nom([hot,pyjamas,gave,bob,some,face],[gave,bob,some,face])"
+      ]
+    ],
+    "np([a,man,believed,edna,caught,a,cake,by,my,pie],[believed,edna,caught,a,cake,by,my,pie])": [
+      [
+	["np", 1 ],
+	["d", "a" ],
+	"nom([man,believed,edna,caught,a,cake,by,my,pie],[believed,edna,caught,a,cake,by,my,pie])"
+      ]
+    ],
+    "np([a,mat,a,park,by,the,man],[a,park,by,the,man])": [
+      [
+	["np", 1 ],
+	["d", "a" ],
+	"nom([mat,a,park,by,the,man],[a,park,by,the,man])"
+      ]
+    ],
+    "np([a,park,by,the,man],[])": [
+      [
+	["np", 3 ],
+	"np([a,park,by,the,man],[by,the,man])",
+	"pp([by,the,man],[])"
+      ]
+    ],
+    "np([a,park,by,the,man],[by,the,man])": [ [ ["np", 1 ],  ["d", "a" ], "nom([park,by,the,man],[by,the,man])" ] ],
+    "np([a,pie],[])": [ [ ["np", 1 ],  ["d", "a" ], "nom([pie],[])" ] ],
+    "np([a,telescope,in,cuthbert],[])": [
+      [
+	["np", 3 ],
+	"np([a,telescope,in,cuthbert],[in,cuthbert])",
+	"pp([in,cuthbert],[])"
+      ]
+    ],
+    "np([a,telescope,in,cuthbert],[in,cuthbert])": [
+      [
+	["np", 1 ],
+	["d", "a" ],
+	"nom([telescope,in,cuthbert],[in,cuthbert])"
+      ]
+    ],
+    "np([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["np", 1 ],
+	["d", "a" ],
+	"nom([thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "np([alice],[])": [ [ ["np", 2 ],  ["pn", "alice" ] ] ],
+    "np([alice,liked,a,pie],[liked,a,pie])": [ [ ["np", 2 ],  ["pn", "alice" ] ] ],
+    "np([alice,lived],[lived])": [ [ ["np", 2 ],  ["pn", "alice" ] ] ],
+    "np([alice,lived,on,some,box],[lived,on,some,box])": [ [ ["np", 2 ],  ["pn", "alice" ] ] ],
+    "np([alice,thought,alice,worked],[thought,alice,worked])": [ [ ["np", 2 ],  ["pn", "alice" ] ] ],
+    "np([alice,under,delia],[])": [
+      [
+	["np", 3 ],
+	"np([alice,under,delia],[under,delia])",
+	"pp([under,delia],[])"
+      ]
+    ],
+    "np([alice,under,delia],[under,delia])": [ [ ["np", 2 ],  ["pn", "alice" ] ] ],
+    "np([alice,with,alice,under,delia],[])": [
+      [
+	["np", 3 ],
+	"np([alice,with,alice,under,delia],[under,delia])",
+	"pp([under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[])"
+      ]
+    ],
+    "np([alice,with,alice,under,delia],[under,delia])": [
+      [
+	["np", 3 ],
+	"np([alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[under,delia])"
+      ]
+    ],
+    "np([alice,with,alice,under,delia],[with,alice,under,delia])": [ [ ["np", 2 ],  ["pn", "alice" ] ] ],
+    "np([alice,worked],[worked])": [ [ ["np", 2 ],  ["pn", "alice" ] ] ],
+    "np([bob],[])": [ [ ["np", 2 ],  ["pn", "bob" ] ] ],
+    "np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])": [
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])",
+	"pp([under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ]
+    ],
+    "np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])": [ [ ["np", 2 ],  ["pn", "bob" ] ] ],
+    "np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])": [
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])": [
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[under,delia])"
+      ]
+    ],
+    "np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])": [
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ]
+    ],
+    "np([bob,made,cuthbert,delia],[made,cuthbert,delia])": [ [ ["np", 2 ],  ["pn", "bob" ] ] ],
+    "np([bob,ran,the,park],[ran,the,park])": [ [ ["np", 2 ],  ["pn", "bob" ] ] ],
+    "np([bob,some,face],[some,face])": [ [ ["np", 2 ],  ["pn", "bob" ] ] ],
+    "np([cuthbert],[])": [ [ ["np", 2 ],  ["pn", "cuthbert" ] ] ],
+    "np([cuthbert,alice],[alice])": [ [ ["np", 2 ],  ["pn", "cuthbert" ] ] ],
+    "np([cuthbert,baked,the,moose,edna],[baked,the,moose,edna])": [ [ ["np", 2 ],  ["pn", "cuthbert" ] ] ],
+    "np([cuthbert,delia],[delia])": [ [ ["np", 2 ],  ["pn", "cuthbert" ] ] ],
+    "np([cuthbert,gave,a,mat,a,park,by,the,man],[gave,a,mat,a,park,by,the,man])": [ [ ["np", 2 ],  ["pn", "cuthbert" ] ] ],
+    "np([cuthbert,knew,cuthbert,liked,the,park,under,alice],[knew,cuthbert,liked,the,park,under,alice])": [ [ ["np", 2 ],  ["pn", "cuthbert" ] ] ],
+    "np([cuthbert,liked,the,park,under,alice],[liked,the,park,under,alice])": [ [ ["np", 2 ],  ["pn", "cuthbert" ] ] ],
+    "np([cuthbert,said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [ [ ["np", 2 ],  ["pn", "cuthbert" ] ] ],
+    "np([cuthbert,with,alice,lived],[lived])": [
+      [
+	["np", 3 ],
+	"np([cuthbert,with,alice,lived],[with,alice,lived])",
+	"pp([with,alice,lived],[lived])"
+      ]
+    ],
+    "np([cuthbert,with,alice,lived],[with,alice,lived])": [ [ ["np", 2 ],  ["pn", "cuthbert" ] ] ],
+    "np([delia],[])": [ [ ["np", 2 ],  ["pn", "delia" ] ] ],
+    "np([delia,baked,some,face,without,bob],[baked,some,face,without,bob])": [ [ ["np", 2 ],  ["pn", "delia" ] ] ],
+    "np([delia,believed,cuthbert,with,alice,lived],[believed,cuthbert,with,alice,lived])": [ [ ["np", 2 ],  ["pn", "delia" ] ] ],
+    "np([delia,by,edna,liked,bob],[by,edna,liked,bob])": [ [ ["np", 2 ],  ["pn", "delia" ] ] ],
+    "np([delia,by,edna,liked,bob],[liked,bob])": [
+      [
+	["np", 3 ],
+	"np([delia,by,edna,liked,bob],[by,edna,liked,bob])",
+	"pp([by,edna,liked,bob],[liked,bob])"
+      ]
+    ],
+    "np([delia,caught,bob],[caught,bob])": [ [ ["np", 2 ],  ["pn", "delia" ] ] ],
+    "np([delia,on,alice,with,alice,under,delia],[])": [
+      [
+	["np", 3 ],
+	"np([delia,on,alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([delia,on,alice,with,alice,under,delia],[under,delia])",
+	"pp([under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[])"
+      ]
+    ],
+    "np([delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])": [ [ ["np", 2 ],  ["pn", "delia" ] ] ],
+    "np([delia,on,alice,with,alice,under,delia],[under,delia])": [
+      [
+	["np", 3 ],
+	"np([delia,on,alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[under,delia])"
+      ]
+    ],
+    "np([delia,on,alice,with,alice,under,delia],[with,alice,under,delia])": [
+      [
+	["np", 3 ],
+	"np([delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ]
+    ],
+    "np([delia,worked],[worked])": [ [ ["np", 2 ],  ["pn", "delia" ] ] ],
+    "np([edna],[])": [ [ ["np", 2 ],  ["pn", "edna" ] ] ],
+    "np([edna,by,delia,on,alice,with,alice,under,delia],[])": [
+      [
+	["np", 3 ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[under,delia])",
+	"pp([under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[])"
+      ]
+    ],
+    "np([edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])": [ [ ["np", 2 ],  ["pn", "edna" ] ] ],
+    "np([edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])": [
+      [
+	["np", 3 ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "np([edna,by,delia,on,alice,with,alice,under,delia],[under,delia])": [
+      [
+	["np", 3 ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[under,delia])"
+      ]
+    ],
+    "np([edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])": [
+      [
+	["np", 3 ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ]
+    ],
+    "np([edna,caught,a,cake,by,my,pie],[caught,a,cake,by,my,pie])": [ [ ["np", 2 ],  ["pn", "edna" ] ] ],
+    "np([edna,liked,bob],[liked,bob])": [ [ ["np", 2 ],  ["pn", "edna" ] ] ],
+    "np([edna,lived],[lived])": [ [ ["np", 2 ],  ["pn", "edna" ] ] ],
+    "np([edna,lived,without,alice],[lived,without,alice])": [ [ ["np", 2 ],  ["pn", "edna" ] ] ],
+    "np([edna,loved,edna],[loved,edna])": [ [ ["np", 2 ],  ["pn", "edna" ] ] ],
+    "np([edna,made,edna,the,box],[made,edna,the,box])": [ [ ["np", 2 ],  ["pn", "edna" ] ] ],
+    "np([edna,ran,edna],[ran,edna])": [ [ ["np", 2 ],  ["pn", "edna" ] ] ],
+    "np([edna,the,box],[the,box])": [ [ ["np", 2 ],  ["pn", "edna" ] ] ],
+    "np([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [ [ ["np", 2 ],  ["pn", "edna" ] ] ],
+    "np([my,cake,hated,alice],[hated,alice])": [ [ ["np", 1 ],  ["d", "my" ], "nom([cake,hated,alice],[hated,alice])" ] ],
+    "np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])": [
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])",
+	"pp([under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ]
+    ],
+    "np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["np", 1 ],
+	["d", "my" ],
+	"nom([disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])": [
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])": [
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[under,delia])"
+      ]
+    ],
+    "np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])": [
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["np", 3 ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ]
+    ],
+    "np([my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[worked,on,the,mat,with,a,telescope,in,cuthbert])": [
+      [
+	["np", 1 ],
+	["d", "my" ],
+	"nom([moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[worked,on,the,mat,with,a,telescope,in,cuthbert])"
+      ]
+    ],
+    "np([my,pie],[])": [ [ ["np", 1 ],  ["d", "my" ], "nom([pie],[])" ] ],
+    "np([my,pyjamas,gave,cuthbert,alice],[gave,cuthbert,alice])": [
+      [
+	["np", 1 ],
+	["d", "my" ],
+	"nom([pyjamas,gave,cuthbert,alice],[gave,cuthbert,alice])"
+      ]
+    ],
+    "np([some,box],[])": [ [ ["np", 1 ],  ["d", "some" ], "nom([box],[])" ] ],
+    "np([some,cat,knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert])": [
+      [
+	["np", 1 ],
+	["d", "some" ],
+	"nom([cat,knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert])"
+      ]
+    ],
+    "np([some,face],[])": [ [ ["np", 1 ],  ["d", "some" ], "nom([face],[])" ] ],
+    "np([some,face,without,bob],[])": [
+      [
+	["np", 3 ],
+	"np([some,face,without,bob],[without,bob])",
+	"pp([without,bob],[])"
+      ]
+    ],
+    "np([some,face,without,bob],[without,bob])": [
+      [
+	["np", 1 ],
+	["d", "some" ],
+	"nom([face,without,bob],[without,bob])"
+      ]
+    ],
+    "np([some,floor,lived],[lived])": [ [ ["np", 1 ],  ["d", "some" ], "nom([floor,lived],[lived])" ] ],
+    "np([some,park,lived],[lived])": [ [ ["np", 1 ],  ["d", "some" ], "nom([park,lived],[lived])" ] ],
+    "np([the,box],[])": [ [ ["np", 1 ],  ["d", "the" ], "nom([box],[])" ] ],
+    "np([the,man],[])": [ [ ["np", 1 ],  ["d", "the" ], "nom([man],[])" ] ],
+    "np([the,mat,with,a,telescope,in,cuthbert],[])": [
+      [
+	["np", 3 ],
+	"np([the,mat,with,a,telescope,in,cuthbert],[in,cuthbert])",
+	"pp([in,cuthbert],[])"
+      ],
+      [
+	["np", 3 ],
+	"np([the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])",
+	"pp([with,a,telescope,in,cuthbert],[])"
+      ]
+    ],
+    "np([the,mat,with,a,telescope,in,cuthbert],[in,cuthbert])": [
+      [
+	["np", 3 ],
+	"np([the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])",
+	"pp([with,a,telescope,in,cuthbert],[in,cuthbert])"
+      ]
+    ],
+    "np([the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])": [
+      [
+	["np", 1 ],
+	["d", "the" ],
+	"nom([mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])"
+      ]
+    ],
+    "np([the,moose,edna],[edna])": [ [ ["np", 1 ],  ["d", "the" ], "nom([moose,edna],[edna])" ] ],
+    "np([the,park],[])": [ [ ["np", 1 ],  ["d", "the" ], "nom([park],[])" ] ],
+    "np([the,park,under,alice],[])": [
+      [
+	["np", 3 ],
+	"np([the,park,under,alice],[under,alice])",
+	"pp([under,alice],[])"
+      ]
+    ],
+    "np([the,park,under,alice],[under,alice])": [ [ ["np", 1 ],  ["d", "the" ], "nom([park,under,alice],[under,alice])" ] ],
+    "np([the,telescope,lived],[lived])": [ [ ["np", 1 ],  ["d", "the" ], "nom([telescope,lived],[lived])" ] ],
+    "pp([by,delia,on,alice,with,alice,under,delia],[])": [ [ ["p", "by" ], "np([delia,on,alice,with,alice,under,delia],[])" ] ],
+    "pp([by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])": [
+      [
+	["p", "by" ],
+	"np([delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "pp([by,delia,on,alice,with,alice,under,delia],[under,delia])": [
+      [
+	["p", "by" ],
+	"np([delia,on,alice,with,alice,under,delia],[under,delia])"
+      ]
+    ],
+    "pp([by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])": [
+      [
+	["p", "by" ],
+	"np([delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ]
+    ],
+    "pp([by,edna,liked,bob],[liked,bob])": [ [ ["p", "by" ], "np([edna,liked,bob],[liked,bob])" ] ],
+    "pp([by,my,pie],[])": [ [ ["p", "by" ], "np([my,pie],[])" ] ],
+    "pp([by,the,man],[])": [ [ ["p", "by" ], "np([the,man],[])" ] ],
+    "pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])": [
+      [
+	["p", "in" ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ]
+    ],
+    "pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["p", "in" ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["p", "in" ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])": [
+      [
+	["p", "in" ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])": [
+      [
+	["p", "in" ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ]
+    ],
+    "pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])": [
+      [
+	["p", "in" ],
+	"np([bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ]
+    ],
+    "pp([in,cuthbert],[])": [ [ ["p", "in" ], "np([cuthbert],[])" ] ],
+    "pp([in,edna,by,delia,on,alice,with,alice,under,delia],[])": [
+      [
+	["p", "in" ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ]
+    ],
+    "pp([in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["p", "in" ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "pp([in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])": [
+      [
+	["p", "in" ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "pp([in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])": [
+      [
+	["p", "in" ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ]
+    ],
+    "pp([in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])": [
+      [
+	["p", "in" ],
+	"np([edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ]
+    ],
+    "pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])": [
+      [
+	["p", "in" ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ]
+    ],
+    "pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["p", "in" ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["p", "in" ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["p", "in" ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])": [
+      [
+	["p", "in" ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])": [
+      [
+	["p", "in" ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ]
+    ],
+    "pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])": [
+      [
+	["p", "in" ],
+	"np([my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ]
+    ],
+    "pp([on,alice,with,alice,under,delia],[])": [ [ ["p", "on" ], "np([alice,with,alice,under,delia],[])" ] ],
+    "pp([on,alice,with,alice,under,delia],[under,delia])": [ [ ["p", "on" ], "np([alice,with,alice,under,delia],[under,delia])" ] ],
+    "pp([on,alice,with,alice,under,delia],[with,alice,under,delia])": [
+      [
+	["p", "on" ],
+	"np([alice,with,alice,under,delia],[with,alice,under,delia])"
+      ]
+    ],
+    "pp([on,some,box],[])": [ [ ["p", "on" ], "np([some,box],[])" ] ],
+    "pp([on,the,mat,with,a,telescope,in,cuthbert],[])": [ [ ["p", "on" ], "np([the,mat,with,a,telescope,in,cuthbert],[])" ] ],
+    "pp([on,the,mat,with,a,telescope,in,cuthbert],[in,cuthbert])": [
+      [
+	["p", "on" ],
+	"np([the,mat,with,a,telescope,in,cuthbert],[in,cuthbert])"
+      ]
+    ],
+    "pp([on,the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])": [
+      [
+	["p", "on" ],
+	"np([the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])"
+      ]
+    ],
+    "pp([under,alice],[])": [ [ ["p", "under" ], "np([alice],[])" ] ],
+    "pp([under,delia],[])": [ [ ["p", "under" ], "np([delia],[])" ] ],
+    "pp([with,a,telescope,in,cuthbert],[])": [ [ ["p", "with" ], "np([a,telescope,in,cuthbert],[])" ] ],
+    "pp([with,a,telescope,in,cuthbert],[in,cuthbert])": [ [ ["p", "with" ], "np([a,telescope,in,cuthbert],[in,cuthbert])" ] ],
+    "pp([with,alice,lived],[lived])": [ [ ["p", "with" ], "np([alice,lived],[lived])" ] ],
+    "pp([with,alice,under,delia],[])": [ [ ["p", "with" ], "np([alice,under,delia],[])" ] ],
+    "pp([with,alice,under,delia],[under,delia])": [ [ ["p", "with" ], "np([alice,under,delia],[under,delia])" ] ],
+    "pp([without,alice],[])": [ [ ["p", "without" ], "np([alice],[])" ] ],
+    "pp([without,bob],[])": [ [ ["p", "without" ], "np([bob],[])" ] ],
+    "s([a,hot,dog,thought,edna,ran,edna],[])": [
+      [
+	"np([a,hot,dog,thought,edna,ran,edna],[thought,edna,ran,edna])",
+	"vp([thought,edna,ran,edna],[])"
+      ]
+    ],
+    "s([a,hot,pyjamas,gave,bob,some,face],[])": [
+      [
+	"np([a,hot,pyjamas,gave,bob,some,face],[gave,bob,some,face])",
+	"vp([gave,bob,some,face],[])"
+      ]
+    ],
+    "s([a,man,believed,edna,caught,a,cake,by,my,pie],[])": [
+      [
+	"np([a,man,believed,edna,caught,a,cake,by,my,pie],[believed,edna,caught,a,cake,by,my,pie])",
+	"vp([believed,edna,caught,a,cake,by,my,pie],[])"
+      ]
+    ],
+    "s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])": [
+      [
+	"np([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ]
+    ],
+    "s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])": [
+      [
+	"np([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	"np([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	"np([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	"np([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])": [
+      [
+	"np([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])": [
+      [
+	"np([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ]
+    ],
+    "s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])": [
+      [
+	"np([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ]
+    ],
+    "s([alice,liked,a,pie],[])": [ ["np([alice,liked,a,pie],[liked,a,pie])", "vp([liked,a,pie],[])" ] ],
+    "s([alice,lived],[])": [ ["np([alice,lived],[lived])", "vp([lived],[])" ] ],
+    "s([alice,lived,on,some,box],[])": [
+      [
+	"np([alice,lived,on,some,box],[lived,on,some,box])",
+	"vp([lived,on,some,box],[])"
+      ]
+    ],
+    "s([alice,thought,alice,worked],[])": [
+      [
+	"np([alice,thought,alice,worked],[thought,alice,worked])",
+	"vp([thought,alice,worked],[])"
+      ]
+    ],
+    "s([alice,worked],[])": [ ["np([alice,worked],[worked])", "vp([worked],[])" ] ],
+    "s([bob,made,cuthbert,delia],[])": [
+      [
+	"np([bob,made,cuthbert,delia],[made,cuthbert,delia])",
+	"vp([made,cuthbert,delia],[])"
+      ]
+    ],
+    "s([bob,ran,the,park],[])": [ ["np([bob,ran,the,park],[ran,the,park])", "vp([ran,the,park],[])" ] ],
+    "s([cuthbert,baked,the,moose,edna],[])": [
+      [
+	"np([cuthbert,baked,the,moose,edna],[baked,the,moose,edna])",
+	"vp([baked,the,moose,edna],[])"
+      ]
+    ],
+    "s([cuthbert,gave,a,mat,a,park,by,the,man],[])": [
+      [
+	"np([cuthbert,gave,a,mat,a,park,by,the,man],[gave,a,mat,a,park,by,the,man])",
+	"vp([gave,a,mat,a,park,by,the,man],[])"
+      ]
+    ],
+    "s([cuthbert,knew,cuthbert,liked,the,park,under,alice],[])": [
+      [
+	"np([cuthbert,knew,cuthbert,liked,the,park,under,alice],[knew,cuthbert,liked,the,park,under,alice])",
+	"vp([knew,cuthbert,liked,the,park,under,alice],[])"
+      ]
+    ],
+    "s([cuthbert,liked,the,park,under,alice],[])": [
+      [
+	"np([cuthbert,liked,the,park,under,alice],[liked,the,park,under,alice])",
+	"vp([liked,the,park,under,alice],[])"
+      ]
+    ],
+    "s([cuthbert,liked,the,park,under,alice],[under,alice])": [
+      [
+	"np([cuthbert,liked,the,park,under,alice],[liked,the,park,under,alice])",
+	"vp([liked,the,park,under,alice],[under,alice])"
+      ]
+    ],
+    "s([cuthbert,said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])": [
+      [
+	"np([cuthbert,said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ]
+    ],
+    "s([cuthbert,with,alice,lived],[])": [ ["np([cuthbert,with,alice,lived],[lived])", "vp([lived],[])" ] ],
+    "s([delia,baked,some,face,without,bob],[])": [
+      [
+	"np([delia,baked,some,face,without,bob],[baked,some,face,without,bob])",
+	"vp([baked,some,face,without,bob],[])"
+      ]
+    ],
+    "s([delia,believed,cuthbert,with,alice,lived],[])": [
+      [
+	"np([delia,believed,cuthbert,with,alice,lived],[believed,cuthbert,with,alice,lived])",
+	"vp([believed,cuthbert,with,alice,lived],[])"
+      ]
+    ],
+    "s([delia,by,edna,liked,bob],[])": [
+      [
+	"np([delia,by,edna,liked,bob],[liked,bob])",
+	"vp([liked,bob],[])"
+      ]
+    ],
+    "s([delia,caught,bob],[])": [ ["np([delia,caught,bob],[caught,bob])", "vp([caught,bob],[])" ] ],
+    "s([delia,worked],[])": [ ["np([delia,worked],[worked])", "vp([worked],[])" ] ],
+    "s([edna,caught,a,cake,by,my,pie],[])": [
+      [
+	"np([edna,caught,a,cake,by,my,pie],[caught,a,cake,by,my,pie])",
+	"vp([caught,a,cake,by,my,pie],[])"
+      ]
+    ],
+    "s([edna,caught,a,cake,by,my,pie],[by,my,pie])": [
+      [
+	"np([edna,caught,a,cake,by,my,pie],[caught,a,cake,by,my,pie])",
+	"vp([caught,a,cake,by,my,pie],[by,my,pie])"
+      ]
+    ],
+    "s([edna,lived],[])": [ ["np([edna,lived],[lived])", "vp([lived],[])" ] ],
+    "s([edna,lived,without,alice],[])": [
+      [
+	"np([edna,lived,without,alice],[lived,without,alice])",
+	"vp([lived,without,alice],[])"
+      ]
+    ],
+    "s([edna,loved,edna],[])": [ ["np([edna,loved,edna],[loved,edna])", "vp([loved,edna],[])" ] ],
+    "s([edna,made,edna,the,box],[])": [
+      [
+	"np([edna,made,edna,the,box],[made,edna,the,box])",
+	"vp([made,edna,the,box],[])"
+      ]
+    ],
+    "s([edna,ran,edna],[])": [ ["np([edna,ran,edna],[ran,edna])", "vp([ran,edna],[])" ] ],
+    "s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])": [
+      [
+	"np([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ]
+    ],
+    "s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])": [
+      [
+	"np([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	"np([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	"np([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	"np([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])": [
+      [
+	"np([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])": [
+      [
+	"np([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ]
+    ],
+    "s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])": [
+      [
+	"np([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ]
+    ],
+    "s([my,cake,hated,alice],[])": [
+      [
+	"np([my,cake,hated,alice],[hated,alice])",
+	"vp([hated,alice],[])"
+      ]
+    ],
+    "s([my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[])": [
+      [
+	"np([my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[worked,on,the,mat,with,a,telescope,in,cuthbert])",
+	"vp([worked,on,the,mat,with,a,telescope,in,cuthbert],[])"
+      ]
+    ],
+    "s([my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[in,cuthbert])": [
+      [
+	"np([my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[worked,on,the,mat,with,a,telescope,in,cuthbert])",
+	"vp([worked,on,the,mat,with,a,telescope,in,cuthbert],[in,cuthbert])"
+      ]
+    ],
+    "s([my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[on,the,mat,with,a,telescope,in,cuthbert])": [
+      [
+	"np([my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[worked,on,the,mat,with,a,telescope,in,cuthbert])",
+	"vp([worked,on,the,mat,with,a,telescope,in,cuthbert],[on,the,mat,with,a,telescope,in,cuthbert])"
+      ]
+    ],
+    "s([my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])": [
+      [
+	"np([my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[worked,on,the,mat,with,a,telescope,in,cuthbert])",
+	"vp([worked,on,the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])"
+      ]
+    ],
+    "s([my,pyjamas,gave,cuthbert,alice],[])": [
+      [
+	"np([my,pyjamas,gave,cuthbert,alice],[gave,cuthbert,alice])",
+	"vp([gave,cuthbert,alice],[])"
+      ]
+    ],
+    "s([some,cat,knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[])": [
+      [
+	"np([some,cat,knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert])",
+	"vp([knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[])"
+      ]
+    ],
+    "s([some,floor,lived],[])": [ ["np([some,floor,lived],[lived])", "vp([lived],[])" ] ],
+    "s([some,park,lived],[])": [ ["np([some,park,lived],[lived])", "vp([lived],[])" ] ],
+    "s([the,telescope,lived],[])": [ ["np([the,telescope,lived],[lived])", "vp([lived],[])" ] ],
+    "vp([baked,some,face,without,bob],[])": [
+      [
+	["vp", 4 ],
+	"vp([baked,some,face,without,bob],[without,bob])",
+	"pp([without,bob],[])"
+      ],
+      [ ["vp", 2 ],  ["tv", "baked" ], "np([some,face,without,bob],[])" ]
+    ],
+    "vp([baked,some,face,without,bob],[without,bob])": [
+      [
+	["vp", 2 ],
+	["tv", "baked" ],
+	"np([some,face,without,bob],[without,bob])"
+      ]
+    ],
+    "vp([baked,the,moose,edna],[])": [
+      [
+	["vp", 3 ],
+	["dv", "baked" ],
+	"np([the,moose,edna],[edna])",
+	"np([edna],[])"
+      ]
+    ],
+    "vp([believed,cuthbert,with,alice,lived],[])": [
+      [
+	["vp", 5 ],
+	["mv", "believed" ],
+	"s([cuthbert,with,alice,lived],[])"
+      ]
+    ],
+    "vp([believed,edna,caught,a,cake,by,my,pie],[])": [
+      [
+	["vp", 5 ],
+	["mv", "believed" ],
+	"s([edna,caught,a,cake,by,my,pie],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([believed,edna,caught,a,cake,by,my,pie],[by,my,pie])",
+	"pp([by,my,pie],[])"
+      ]
+    ],
+    "vp([believed,edna,caught,a,cake,by,my,pie],[by,my,pie])": [
+      [
+	["vp", 5 ],
+	["mv", "believed" ],
+	"s([edna,caught,a,cake,by,my,pie],[by,my,pie])"
+      ]
+    ],
+    "vp([caught,a,cake,by,my,pie],[])": [
+      [
+	["vp", 4 ],
+	"vp([caught,a,cake,by,my,pie],[by,my,pie])",
+	"pp([by,my,pie],[])"
+      ],
+      [ ["vp", 2 ],  ["tv", "caught" ], "np([a,cake,by,my,pie],[])" ]
+    ],
+    "vp([caught,a,cake,by,my,pie],[by,my,pie])": [
+      [
+	["vp", 2 ],
+	["tv", "caught" ],
+	"np([a,cake,by,my,pie],[by,my,pie])"
+      ]
+    ],
+    "vp([caught,bob],[])": [ [ ["vp", 2 ],  ["tv", "caught" ], "np([bob],[])" ] ],
+    "vp([gave,a,mat,a,park,by,the,man],[])": [
+      [
+	["vp", 4 ],
+	"vp([gave,a,mat,a,park,by,the,man],[by,the,man])",
+	"pp([by,the,man],[])"
+      ],
+      [
+	["vp", 3 ],
+	["dv", "gave" ],
+	"np([a,mat,a,park,by,the,man],[a,park,by,the,man])",
+	"np([a,park,by,the,man],[])"
+      ]
+    ],
+    "vp([gave,a,mat,a,park,by,the,man],[by,the,man])": [
+      [
+	["vp", 3 ],
+	["dv", "gave" ],
+	"np([a,mat,a,park,by,the,man],[a,park,by,the,man])",
+	"np([a,park,by,the,man],[by,the,man])"
+      ]
+    ],
+    "vp([gave,bob,some,face],[])": [
+      [
+	["vp", 3 ],
+	["dv", "gave" ],
+	"np([bob,some,face],[some,face])",
+	"np([some,face],[])"
+      ]
+    ],
+    "vp([gave,cuthbert,alice],[])": [
+      [
+	["vp", 3 ],
+	["dv", "gave" ],
+	"np([cuthbert,alice],[alice])",
+	"np([alice],[])"
+      ]
+    ],
+    "vp([hated,alice],[])": [ [ ["vp", 2 ],  ["tv", "hated" ], "np([alice],[])" ] ],
+    "vp([knew,cuthbert,liked,the,park,under,alice],[])": [
+      [
+	["vp", 5 ],
+	["mv", "knew" ],
+	"s([cuthbert,liked,the,park,under,alice],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,cuthbert,liked,the,park,under,alice],[under,alice])",
+	"pp([under,alice],[])"
+      ]
+    ],
+    "vp([knew,cuthbert,liked,the,park,under,alice],[under,alice])": [
+      [
+	["vp", 5 ],
+	["mv", "knew" ],
+	"s([cuthbert,liked,the,park,under,alice],[under,alice])"
+      ]
+    ],
+    "vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])": [
+      [
+	["vp", 5 ],
+	["mv", "knew" ],
+	"s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])",
+	"pp([under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[])"
+      ]
+    ],
+    "vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["vp", 5 ],
+	["mv", "knew" ],
+	"s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["vp", 5 ],
+	["mv", "knew" ],
+	"s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["vp", 5 ],
+	["mv", "knew" ],
+	"s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["vp", 5 ],
+	["mv", "knew" ],
+	"s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])": [
+      [
+	["vp", 5 ],
+	["mv", "knew" ],
+	"s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])": [
+      [
+	["vp", 5 ],
+	["mv", "knew" ],
+	"s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[under,delia])"
+      ]
+    ],
+    "vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])": [
+      [
+	["vp", 5 ],
+	["mv", "knew" ],
+	"s([edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ]
+    ],
+    "vp([knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[])": [
+      [
+	["vp", 5 ],
+	["mv", "knew" ],
+	"s([my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])",
+	"pp([with,a,telescope,in,cuthbert],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[in,cuthbert])",
+	"pp([in,cuthbert],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[on,the,mat,with,a,telescope,in,cuthbert])",
+	"pp([on,the,mat,with,a,telescope,in,cuthbert],[])"
+      ]
+    ],
+    "vp([knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[in,cuthbert])": [
+      [
+	["vp", 5 ],
+	["mv", "knew" ],
+	"s([my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[in,cuthbert])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])",
+	"pp([with,a,telescope,in,cuthbert],[in,cuthbert])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[on,the,mat,with,a,telescope,in,cuthbert])",
+	"pp([on,the,mat,with,a,telescope,in,cuthbert],[in,cuthbert])"
+      ]
+    ],
+    "vp([knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[on,the,mat,with,a,telescope,in,cuthbert])": [
+      [
+	["vp", 5 ],
+	["mv", "knew" ],
+	"s([my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[on,the,mat,with,a,telescope,in,cuthbert])"
+      ]
+    ],
+    "vp([knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])": [
+      [
+	["vp", 5 ],
+	["mv", "knew" ],
+	"s([my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[on,the,mat,with,a,telescope,in,cuthbert])",
+	"pp([on,the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])"
+      ]
+    ],
+    "vp([liked,a,pie],[])": [ [ ["vp", 2 ],  ["tv", "liked" ], "np([a,pie],[])" ] ],
+    "vp([liked,bob],[])": [ [ ["vp", 2 ],  ["tv", "liked" ], "np([bob],[])" ] ],
+    "vp([liked,the,park,under,alice],[])": [
+      [
+	["vp", 4 ],
+	"vp([liked,the,park,under,alice],[under,alice])",
+	"pp([under,alice],[])"
+      ],
+      [ ["vp", 2 ],  ["tv", "liked" ], "np([the,park,under,alice],[])" ]
+    ],
+    "vp([liked,the,park,under,alice],[under,alice])": [
+      [
+	["vp", 2 ],
+	["tv", "liked" ],
+	"np([the,park,under,alice],[under,alice])"
+      ]
+    ],
+    "vp([lived],[])": [ [ ["vp", 1 ],  ["iv", "lived" ] ] ],
+    "vp([lived,on,some,box],[])": [
+      [
+	["vp", 4 ],
+	"vp([lived,on,some,box],[on,some,box])",
+	"pp([on,some,box],[])"
+      ]
+    ],
+    "vp([lived,on,some,box],[on,some,box])": [ [ ["vp", 1 ],  ["iv", "lived" ] ] ],
+    "vp([lived,without,alice],[])": [
+      [
+	["vp", 4 ],
+	"vp([lived,without,alice],[without,alice])",
+	"pp([without,alice],[])"
+      ]
+    ],
+    "vp([lived,without,alice],[without,alice])": [ [ ["vp", 1 ],  ["iv", "lived" ] ] ],
+    "vp([loved,edna],[])": [ [ ["vp", 2 ],  ["tv", "loved" ], "np([edna],[])" ] ],
+    "vp([made,cuthbert,delia],[])": [
+      [
+	["vp", 3 ],
+	["dv", "made" ],
+	"np([cuthbert,delia],[delia])",
+	"np([delia],[])"
+      ]
+    ],
+    "vp([made,edna,the,box],[])": [
+      [
+	["vp", 3 ],
+	["dv", "made" ],
+	"np([edna,the,box],[the,box])",
+	"np([the,box],[])"
+      ]
+    ],
+    "vp([ran,edna],[])": [ [ ["vp", 2 ],  ["tv", "ran" ], "np([edna],[])" ] ],
+    "vp([ran,the,park],[])": [ [ ["vp", 2 ],  ["tv", "ran" ], "np([the,park],[])" ] ],
+    "vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])": [
+      [
+	["vp", 5 ],
+	["mv", "said" ],
+	"s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])",
+	"pp([under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ]
+    ],
+    "vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["vp", 5 ],
+	["mv", "said" ],
+	"s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["vp", 5 ],
+	["mv", "said" ],
+	"s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["vp", 5 ],
+	["mv", "said" ],
+	"s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["vp", 5 ],
+	["mv", "said" ],
+	"s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])": [
+      [
+	["vp", 5 ],
+	["mv", "said" ],
+	"s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])": [
+      [
+	["vp", 5 ],
+	["mv", "said" ],
+	"s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[under,delia])"
+      ]
+    ],
+    "vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])": [
+      [
+	["vp", 5 ],
+	["mv", "said" ],
+	"s([a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ]
+    ],
+    "vp([thought,alice,worked],[])": [ [ ["vp", 5 ],  ["mv", "thought" ], "s([alice,worked],[])" ] ],
+    "vp([thought,edna,ran,edna],[])": [ [ ["vp", 5 ],  ["mv", "thought" ], "s([edna,ran,edna],[])" ] ],
+    "vp([worked],[])": [ [ ["vp", 1 ],  ["iv", "worked" ] ] ],
+    "vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])": [
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])",
+	"pp([under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[])"
+      ]
+    ],
+    "vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])": [
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])": [ [ ["vp", 1 ],  ["iv", "worked" ] ] ],
+    "vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])": [
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])"
+      ]
+    ],
+    "vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])": [
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])",
+	"pp([with,alice,under,delia],[under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[under,delia])"
+      ]
+    ],
+    "vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])": [
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,bob,in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[in,edna,by,delia,on,alice,with,alice,under,delia])",
+	"pp([in,edna,by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[by,delia,on,alice,with,alice,under,delia])",
+	"pp([by,delia,on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[on,alice,with,alice,under,delia])",
+	"pp([on,alice,with,alice,under,delia],[with,alice,under,delia])"
+      ]
+    ],
+    "vp([worked,on,the,mat,with,a,telescope,in,cuthbert],[])": [
+      [
+	["vp", 4 ],
+	"vp([worked,on,the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])",
+	"pp([with,a,telescope,in,cuthbert],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,on,the,mat,with,a,telescope,in,cuthbert],[on,the,mat,with,a,telescope,in,cuthbert])",
+	"pp([on,the,mat,with,a,telescope,in,cuthbert],[])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,on,the,mat,with,a,telescope,in,cuthbert],[in,cuthbert])",
+	"pp([in,cuthbert],[])"
+      ]
+    ],
+    "vp([worked,on,the,mat,with,a,telescope,in,cuthbert],[in,cuthbert])": [
+      [
+	["vp", 4 ],
+	"vp([worked,on,the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])",
+	"pp([with,a,telescope,in,cuthbert],[in,cuthbert])"
+      ],
+      [
+	["vp", 4 ],
+	"vp([worked,on,the,mat,with,a,telescope,in,cuthbert],[on,the,mat,with,a,telescope,in,cuthbert])",
+	"pp([on,the,mat,with,a,telescope,in,cuthbert],[in,cuthbert])"
+      ]
+    ],
+    "vp([worked,on,the,mat,with,a,telescope,in,cuthbert],[on,the,mat,with,a,telescope,in,cuthbert])": [ [ ["vp", 1 ],  ["iv", "worked" ] ] ],
+    "vp([worked,on,the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])": [
+      [
+	["vp", 4 ],
+	"vp([worked,on,the,mat,with,a,telescope,in,cuthbert],[on,the,mat,with,a,telescope,in,cuthbert])",
+	"pp([on,the,mat,with,a,telescope,in,cuthbert],[with,a,telescope,in,cuthbert])"
+      ]
+    ],
+    "'$top$'": [
+      [
+	"s([edna,made,edna,the,box],[])",
+	"s([cuthbert,knew,cuthbert,liked,the,park,under,alice],[])",
+	"s([delia,believed,cuthbert,with,alice,lived],[])",
+	"s([edna,lived,without,alice],[])",
+	"s([my,pyjamas,gave,cuthbert,alice],[])",
+	"s([alice,thought,alice,worked],[])",
+	"s([the,telescope,lived],[])",
+	"s([edna,lived],[])",
+	"s([delia,worked],[])",
+	"s([alice,lived,on,some,box],[])",
+	"s([delia,caught,bob],[])",
+	"s([bob,ran,the,park],[])",
+	"s([some,cat,knew,my,moose,worked,on,the,mat,with,a,telescope,in,cuthbert],[])",
+	"s([delia,by,edna,liked,bob],[])",
+	"s([my,cake,hated,alice],[])",
+	"s([cuthbert,gave,a,mat,a,park,by,the,man],[])",
+	"s([alice,liked,a,pie],[])",
+	"s([a,hot,dog,thought,edna,ran,edna],[])",
+	"s([cuthbert,said,a,thin,moose,knew,edna,worked,in,my,disgusting,cat,in,bob,in,edna,by,delia,on,alice,with,alice,under,delia],[])",
+	"s([delia,worked],[])",
+	"s([delia,baked,some,face,without,bob],[])",
+	"s([some,floor,lived],[])",
+	"s([a,man,believed,edna,caught,a,cake,by,my,pie],[])",
+	"s([alice,lived],[])",
+	"s([bob,made,cuthbert,delia],[])",
+	"s([some,park,lived],[])",
+	"s([edna,loved,edna],[])",
+	"s([a,hot,pyjamas,gave,bob,some,face],[])",
+	"s([cuthbert,baked,the,moose,edna],[])",
+	"s([delia,worked],[])"
+      ]
+    ]
+  }
+}

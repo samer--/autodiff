@@ -1,0 +1,44 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{luatex85}
+\usepackage[T1]{fontenc}
+\usepackage{amsfonts,textcomp} % what are these for?
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{tikz}
+\usetikzlibrary{graphs, graphdrawing}
+\pgfrealjobname{figs}
+\usegdlibrary{trees, layered, force}
+\tikzset{every picture/.style=semithick}
+
+\begin{document}
+\beginpgfgraphicnamed{figs-f1}
+\begin{tikzpicture}[inner sep=2pt] 
+	\graph[typeset=\textbf{\tikzgraphnodetext}, tree layout, 
+	       level distance=3.0em, sibling distance=1.8em, grow=180]{
+			 E[as=$E$] <- log <- D[as=$D$] <- add <- {C[as=$C$] <- mul <- {A[as=$A$], B[as=$B$]}, 1[as=$1$]} 
+	};
+\end{tikzpicture}
+\endpgfgraphicnamed
+
+\beginpgfgraphicnamed{figs-f2}
+\begin{tikzpicture}[inner sep=2pt] 
+	\graph[typeset=\textbf{\tikzgraphnodetext}, layered layout, level distance=3.0em, sibling distance=1.8em, grow=0]{
+	{ {{2[as=2], X[as=$X$]} -> mul -> Y[as=$Y$]}, {X -> log -> Z[as=$Z$]}} -> add -> L[as=$L$]
+	};
+\end{tikzpicture}
+\endpgfgraphicnamed
+
+\beginpgfgraphicnamed{figs-f3}
+\begin{tikzpicture}[inner sep=1.5pt] 
+	% \graph[typeset=\textbf{\tikzgraphnodetext}, layered layout, level distance=4.0em, sibling distance=2.0em, grow=0]{
+	\graph[typeset=\textbf{\tikzgraphnodetext}, spring layout, vertical=X to mul, node distance=5em]{
+		{ {{2[as=2], X[as=$X$]} -> mul -> Y[as=$Y$]}
+		, {X -> log[nudge down=2em] -> Z[as=$Z$,nudge down=1.8em]}
+		} -> add[nudge right=0.78ex] -> L[as=$L$,nudge up=0.4em];
+		{2, DZX[as=$\frac{\partial Z}{\partial X}$] } -> add2[as=\textbf{add},nudge left=0.94ex] 
+		  -> DX[as=$\frac{\partial L}{\partial X}$, nudge up=0.25em];
+	  X[nudge down=2em] -> "pow(-1)"[nudge down=2em] -> DZX[nudge down=2em] 
+	};
+\end{tikzpicture}
+\endpgfgraphicnamed
+\end{document}

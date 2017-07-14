@@ -1,0 +1,63 @@
+\documentclass[a4paper,10pt]{article}
+
+% \usepackage{luatex85}
+\usepackage[spacing]{microtype}
+\usepackage[T1]{fontenc}
+\usepackage{amsfonts,textcomp} % what are these for?
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{textcase}
+\usepackage{xcolor,hyperref}
+\usepackage[round]{natbib}
+\usepackage{units}
+\usepackage{authblk}
+\usepackage{prolog,abbrvs,refutils,figutils,maths,nicefrac}
+
+\def\nf(#1,#2){\nicefrac{#1}{#2}}
+
+\definecolor{DarkRed}{rgb}{0.4,0.1,0}
+\definecolor{MidRed}{rgb}{0.6,0,0}
+\hypersetup{colorlinks,citecolor=black,urlcolor=MidRed,linkcolor=MidRed}
+
+% \usepackage{tikz}
+% % \usepackage{pgfplots}
+
+% \usetikzlibrary{graphs, graphdrawing}
+% \usegdlibrary{trees, layered, force}
+% \tikzset{every picture/.style=semithick}
+
+\usepackage{graphicx}
+% \graphicspath{{figs/}}
+
+\def\citepos#1{\citeauthor{#1}'s \citeyearpar{#1}\xspace}
+\def\citeNP#1{\citeauthor{#1}, \citeyear{#1}}
+% \let\cite\citep
+% \let\paragraph\runinhead
+
+\DeclareMathAlphabet{\mathcal}{OMS}{cmsy}{m}{n}
+
+\def\TheAuthors{Samer Abdallah (samer@jukedeck.com)}
+\input{preamble.tex}
+
+\title{\TheTitle}
+\author{\TheAuthors}
+\affil{\TheInstitution}
+\date{\textordinal{31}{st} May, 2017}
+
+\def\myclearpage{}
+\def\iftwocol#1#2{#2}
+\begin{document}
+	\maketitle
+	\begin{abstract}\TheAbstract\end{abstract}
+	\input{body.tex}
+
+	\bigskip
+	\noindent
+	\textbf{Acknowledgments}\\
+	\TheAcknowledgments
+
+	%\pagebreak
+	\bibliographystyle{abbrvnat}
+	{\bibliography{all,compsci,me}} % \small ?
+	% \bibliographystyle{apalike}
+	% {\bibliography{all,c4dm,compsci}}
+\end{document}

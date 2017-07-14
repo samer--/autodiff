@@ -1,0 +1,5 @@
+#!/bin/sh
+lualatex --jobname=figs-f1 figs.tex
+lualatex --jobname=figs-f2 figs.tex
+lualatex --jobname=figs-f3 figs.tex
+rm *.log
