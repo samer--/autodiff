@@ -11,7 +11,7 @@ import qualified Prelude
   an arbitrary function to a differentiable function and thus no way to implement arr,
   and also because the differentiability requirement means that most of the data types
   flowing through the graph need to be able to represent their own tangent spaces, at
-  least as far as being able to add them and get an appropriate zer.
+  least as far as being able to add them and get an appropriate zero.
 
   Instead, the space of differentiable functions is a closer fit to a Cartesian or 
   bi-Cartesian category. Below, I've only implemented a Cartesian category, ie with
