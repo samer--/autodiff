@@ -83,7 +83,7 @@ def semiring_graph_folder(new_param, sr, graph, switches_values):
 # ------------- timing ------------------
 
 def speed_test(reps, io, ops, system):
-    upd, s0 = time_call("Inside-outside setup", io, ops, system)
+    upd, s0 = time_call("TOTAL setup", io, ops, system)
     def repeat_upd():
         for i in xrange(reps): upd(s0)
     time_call("Update (x%d)" % reps, repeat_upd)

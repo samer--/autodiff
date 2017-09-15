@@ -12,7 +12,7 @@ def function(in_vars, out_vars):
             return sess.run(out_vars, d)
     return run
 
-def replace_nones(x, ys): return [x if y is None else x for y in ys]
+def replace_nones(x, ys): return [x if y is None else y for y in ys]
 
 Ops = { 'exp':  tf.exp
       , 'log':  tf.log
