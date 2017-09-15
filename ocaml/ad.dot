@@ -1,0 +1,18 @@
+digraph adarr {
+  id -> fst
+  compose -> {second dup first assocl compose}
+  intro -> fst
+  elim -> { compose fst intro }
+  dup -> {compose fst add}
+  add -> {compose fst dup}
+  uniti -> {compose fst swap}
+  unite -> {compose fst uniti}
+  fst -> {compose  fst uniti second intro swap}
+  snd -> {compose  fst uniti first intro}
+  swap -> {compose fst swap}
+  assocl -> {compose fst assocr}
+  assocr -> {compose fst assocl}
+  first -> {compose second fst swap assocl first}
+  second -> {compose second snd assocr}
+}
+
